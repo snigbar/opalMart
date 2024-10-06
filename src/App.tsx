@@ -1,12 +1,12 @@
-import "./App.css";
-import { useAppSelector } from "./store/hooks/hooks";
+import './App.css';
+import { useAppSelector } from './store/hooks/hooks';
 
 function App() {
-  const { isLoading } = useAppSelector((state) => state.authReducer);
+	const { isLoading } = useAppSelector((state) => state.authReducer);
+	var number;
+	console.log(isLoading || true);
 
-  console.log(isLoading);
-
-  return <>helloe</>;
+	return <>helloe</>;
 }
 
 export default App;
